@@ -29,11 +29,12 @@ static char	*create_base(char *char_base, int base)
 	return (char_base);
 }
 
-static char	*convert_value(char *c_base, int base, int value, char *char_value)
+static char	*convert_value(char *c_base, int base, unsigned int value, \
+							char *char_value)
 {
-	int		i;
-	char	*str;
-	int		reste;
+	int				i;
+	char			*str;
+	unsigned int	reste;
 
 	reste = 0;
 	if (value <= 0)
